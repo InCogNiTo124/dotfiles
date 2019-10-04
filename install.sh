@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 set -e
+pushd ~
+mkdir repos
+cd repos
 sudo add-apt-repository ppa:kubuntu-ppa/backports
+sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update && yes | sudo apt-get upgrade
 sudo apt-get install htop neovim build-essential git tmux
+git clone https://github.com/InCogNiTo124/dotfiles.git
+pushd dotfiles
 ln $(pwd)/.bash_aliases ~/.bash_aliases
 ln $(pwd)/.bash_functions ~/.bash_functions
 cat >> ~/.bashrc << EOF
@@ -12,3 +18,6 @@ if [ -f ~/.bash_functions ]; then
 fi
 EOF
 source ~/.bashrc
+popd
+popd
+
