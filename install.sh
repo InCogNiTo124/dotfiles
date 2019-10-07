@@ -4,7 +4,6 @@ pushd ~
 mkdir repos
 cd repos
 sudo add-apt-repository ppa:kubuntu-ppa/backports
-sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update && yes | sudo apt-get upgrade
 sudo apt-get install htop neovim build-essential git tmux
 git clone https://github.com/InCogNiTo124/dotfiles.git
