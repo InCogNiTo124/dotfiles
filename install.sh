@@ -5,7 +5,7 @@ mkdir repos
 cd repos
 sudo add-apt-repository ppa:kubuntu-ppa/backports
 sudo apt-get update && yes | sudo apt-get upgrade
-sudo apt-get install htop neovim build-essential git tmux
+sudo apt-get install -y htop neovim build-essential git tmux gimp
 git clone https://github.com/InCogNiTo124/dotfiles.git
 pushd dotfiles
 ln $(pwd)/.bash_aliases ~/.bash_aliases
@@ -16,7 +16,7 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
 EOF
-source ~/.bashrc
 popd
+source ~/.bashrc
 popd
 
