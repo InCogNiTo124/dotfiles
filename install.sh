@@ -10,6 +10,7 @@ git clone https://github.com/InCogNiTo124/dotfiles.git
 pushd dotfiles
 ln $(pwd)/.bash_aliases ~/.bash_aliases
 ln $(pwd)/.bash_functions ~/.bash_functions
+ln $(pwd)/.inputrc ~/.inputrc
 cat >> ~/.bashrc << EOF
 
 if [ -f ~/.bash_functions ]; then
