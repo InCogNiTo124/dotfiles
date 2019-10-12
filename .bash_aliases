@@ -6,4 +6,4 @@ alias update='sudo apt-get update && yes | sudo apt-get upgrade'
 alias cls='printf "\033c"'
 alias cp='cp -v'
 alias mv='mv -v'
-
+alias ln='ln -v'
