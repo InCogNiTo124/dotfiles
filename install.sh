@@ -12,6 +12,7 @@ ln $(pwd)/.bash_aliases ~/.bash_aliases
 ln $(pwd)/.bash_functions ~/.bash_functions
 ln $(pwd)/.inputrc ~/.inputrc
 ln $(pwd)/.tmux.conf ~/.tmux.conf
+ln -s $(pwd)/nvim ~/.config/nvim
 cat >> ~/.bashrc << EOF
 
 if [ -f ~/.bash_functions ]; then
