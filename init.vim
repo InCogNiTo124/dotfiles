@@ -10,4 +10,9 @@ set encoding=utf-8
 
 call plug#begin('~/.config/nvim/plugins')
 Plug 'ycm-core/YouCompleteMe'
+Plug 'jeetsukumaran/vim-indentwise'
 call plug#end()
+
+set exrc
+set secure
+
