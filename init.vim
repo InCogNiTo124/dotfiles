@@ -15,4 +15,5 @@ call plug#end()
 
 set exrc
 set secure
+let g:ycm_confirm_extra_conf=0
 
