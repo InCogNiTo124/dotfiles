@@ -18,7 +18,7 @@ mkdir -p repos
 cd repos
 sudo add-apt-repository -y ppa:kubuntu-ppa/backports
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y htop neovim build-essential git tmux gimp python3-dev python3-pip python3-virtualenv curl sqlite3 sqlite3-doc
+sudo apt-get install -y htop neovim build-essential git tmux gimp python3-dev python3-pip python3-virtualenv curl sqlite3 sqlite3-doc python3-tk
 git clone https://github.com/InCogNiTo124/dotfiles.git
 pushd dotfiles
 ln -vf $(pwd)/.bash_aliases ~/.bash_aliases
