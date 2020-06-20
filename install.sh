@@ -19,6 +19,7 @@ cd repos
 sudo add-apt-repository -y ppa:kubuntu-ppa/backports
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y htop neovim build-essential git tmux gimp python3-dev python3-pip python3-virtualenv curl sqlite3 sqlite3-doc python3-tk
+python3 -m pip install pynvim
 git clone https://github.com/InCogNiTo124/dotfiles.git
 pushd dotfiles
 ln -vf $(pwd)/.bash_aliases ~/.bash_aliases
@@ -31,6 +32,9 @@ cat >> ~/.bashrc << EOF
 if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
+
+VISUAL="vim"
+EDITOR="vim"
 EOF
 popd
 source ~/.bashrc
