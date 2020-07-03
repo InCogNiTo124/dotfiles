@@ -16,7 +16,7 @@ set undodir=~/.config/nvim/undodir
 set undofile
 
 " Insert a character
-nnoremap <Space> i_<Esc>r
+" nnoremap <Space> i_<Esc>r
 
 
 call plug#begin('~/.config/nvim/plugins')
@@ -27,7 +27,7 @@ call plug#end()
 iab pymain if __name__ == "__main__":
 iab pyclass class Class<CR>
 \    def __init__(self):<CR>
-\        return<CR><ESC>kkkwhxcw
+\        return<CR><ESC>kkkkwhxcw
 set exrc
 set secure
 let g:ycm_confirm_extra_conf=0

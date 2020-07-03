@@ -22,3 +22,6 @@ alias ln='ln -v'
 
 # Pretty 'git log' ^^
 alias gl='git log --all --graph --decorate --oneline'
+
+# I use nvim
+alias vim='nvim'
