@@ -122,4 +122,4 @@ fi
 
 export EDITOR="vim";
 export VISUAl="vim";
-PATH="/home/msmetko/.gem/ruby/2.7.0/bin:${PATH}"
+PATH="/home/msmetko/.gem/ruby/2.7.0/bin:${PATH}" # for fusuma
